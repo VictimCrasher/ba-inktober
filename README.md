@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🖌️ Inktober Archive
+
+A modern, responsive personal portfolio website showcasing my inktober work.  
+Built with **NextJS**, **Typescript**, and **Material UI**, featuring a dynamic, JSON-driven project list and fully responsive layout optimized for all devices.
 
 ## Getting Started
 
