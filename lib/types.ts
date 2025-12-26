@@ -3,7 +3,7 @@ export type Entry = {
 	title: string;
 	description: string[];
 	note: string[];
-	school: string;
+	school: string | undefined;
 	characters: {
 		name: string;
 		club: string;

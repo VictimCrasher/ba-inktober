@@ -20,7 +20,11 @@ export default function Featured() {
 	const { isLandscape, image, title } = featuredEntry;
 
 	return (
-		<Stack justifyContent="center" alignItems="center" sx={{ position: "relative", height: "50vh", width: "100%" }}>
+		<Stack
+			justifyContent="center"
+			alignItems="center"
+			sx={{ position: "relative", height: { xs: "50vh", md: "75vh" }, width: "100%" }}
+		>
 			<Box
 				component={Link}
 				href={`/${year}/${day}`}
