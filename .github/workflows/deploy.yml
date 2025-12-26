@@ -1,0 +1,50 @@
+name: Deploy Website
+
+on:
+  push:
+    branches: [ master ]   # change if your default branch differs
+  workflow_dispatch:     # allow manual run
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install & Build
+        run: |
+          npm ci
+          npm run build
+          
+      - name: List build artifacts
+        run: |
+          echo "Build artifacts:"
+          ls -la out/
+          echo "Checking if index.html exists:"
+          test -f out/index.html && echo "✅ index.html found" || echo "❌ index.html missing"
+
+      # Upload the contents of dist/ to your docroot via SFTP
+      - name: SFTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PASS }}
+          local-dir: ./out/
+          server-dir: ba-ink.victim-crasher.com/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
+            **/Thumbs.db
+          log-level: verbose
+          dry-run: false

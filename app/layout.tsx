@@ -24,7 +24,15 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Inktober Archive",
 		description: "A collection of Inktober drawings, Blue Archive edition",
-		images: "/og-image.png",
+		url: "https://ba-ink.victim-crasher.com",
+		images: ["https://ba-ink.victim-crasher.com/banner.png"],
+		siteName: "Inktober Archive",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Inktober Archive",
+		description: "A collection of Inktober drawings, Blue Archive edition",
+		images: ["https://ba-ink.victim-crasher.com/banner.png"]
 	},
 };
 

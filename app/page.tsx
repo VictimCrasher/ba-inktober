@@ -1,8 +1,9 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Skeleton, Stack, Typography } from "@mui/material";
 import { headerLabels, headerDescription } from "@/lib/header";
 import HeaderActions from "./components/headerActions";
 import Featured from "./components/featured";
 import Entries from "./components/entries";
+import { Suspense } from "react";
 
 export default function Home() {
 	return (
@@ -52,7 +53,9 @@ export default function Home() {
 				</Box>
 			</Container>
 			<section id="entries" style={{ scrollMarginTop: "64px" }}>
-				<Entries />
+				<Suspense fallback={<Skeleton variant="rectangular" height={300} width="100%" />}>
+					<Entries />
+				</Suspense>
 			</section>
 		</Box>
 	);
