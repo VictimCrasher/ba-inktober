@@ -2,6 +2,7 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import { headerLabels, headerDescription } from "@/lib/header";
 import HeaderActions from "./components/headerActions";
 import Featured from "./components/featured";
+import Entries from "./components/entries";
 
 export default function Home() {
 	return (
@@ -50,6 +51,9 @@ export default function Home() {
 					<Featured />
 				</Box>
 			</Container>
+			<section id="entries" style={{ scrollMarginTop: "64px" }}>
+				<Entries />
+			</section>
 		</Box>
 	);
 }

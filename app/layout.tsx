@@ -5,6 +5,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/src/theme";
 import "./globals.css";
 import Header from "@/src/components/Header/header";
+import Footer from "@/src/components/footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
 	variable: "--font-plus-jakarta-sans",
@@ -38,9 +40,11 @@ export default function RootLayout({
 					<ThemeProvider theme={theme}>
 						<Header />
 						{children}
+						<Footer />
 					</ThemeProvider>
 				</AppRouterCacheProvider>
 			</body>
+			<GoogleAnalytics gaId="G-R3PG5HCG44" />
 		</html>
 	);
 }

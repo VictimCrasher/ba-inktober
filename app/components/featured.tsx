@@ -91,7 +91,7 @@ export default function Featured() {
 						...border,
 						boxShadow: "2px 2px 0 0 black",
 						fontSize: "0.75rem",
-						textWrap: "pre",
+						whiteSpace: "pre-wrap",
 						transition: "transform 0.3s ease-in-out",
 					}}
 				>
@@ -112,7 +112,7 @@ export default function Featured() {
 						color: "white",
 						fontWeight: "bold",
 						fontSize: "0.75rem",
-						textWrap: "nowrap",
+						whiteSpace: "nowrap",
 						...border,
 						transition: "transform 0.3s ease-in-out",
 					}}

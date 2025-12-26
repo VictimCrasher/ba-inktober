@@ -38,6 +38,13 @@ const theme = createTheme({
 				},
 			},
 		},
+		MuiToggleButton: {
+			styleOverrides: {
+				root: {
+					textTransform: "none",
+				},
+			},
+		},
 	},
 });
 

@@ -6,8 +6,11 @@ export type Entry = {
 	school: string | undefined;
 	characters: {
 		name: string;
-		club: string;
+		club: string | undefined;
 	}[];
 	isLandscape: boolean;
 	image: string;
+	pixiv?: string;
+	twitter?: string;
+	blueSky?: string;
 };

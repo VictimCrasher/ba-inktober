@@ -1,4 +1,6 @@
-export const entries = [
+import { Entry } from "./types";
+
+export const entries: Entry[] = [
 	{
 		date: "2024-10-01",
 		title: "Arona",
@@ -16,6 +18,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-01.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utnycxdq2q",
+		twitter: "https://x.com/Victim_Crasher/status/1841121005919748146",
 	},
 	{
 		date: "2024-10-02",
@@ -33,6 +38,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-02.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utpemmla2q",
+		twitter: "https://x.com/Victim_Crasher/status/1841474437583077417",
 	},
 	{
 		date: "2024-10-03",
@@ -54,6 +62,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-03.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utqp2oli2q",
+		twitter: "https://x.com/Victim_Crasher/status/1841850125397946591",
 	},
 	{
 		date: "2024-10-04",
@@ -76,6 +87,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-04.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utrqspix2v",
+		twitter: "https://x.com/Victim_Crasher/status/1842202984341799057",
 	},
 	{
 		date: "2024-10-05",
@@ -99,6 +113,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-05.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utstefm42u",
+		twitter: "https://x.com/Victim_Crasher/status/1842575507445149958",
 	},
 	{
 		date: "2024-10-06",
@@ -118,6 +135,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-06.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uttox7ml2j",
+		twitter: "https://x.com/Victim_Crasher/status/1842929526571241885",
 	},
 	{
 		date: "2024-10-07",
@@ -131,12 +151,14 @@ export const entries = [
 		characters: [
 			{
 				name: "Ajitani Hifumi",
-				club: ["Go-Home Club", "Make-Up Work Club"],
-				clubLabel: "Go-Home Club (Vol. 1), Make-Up Work Club (Vol. 3)",
+				club: "Make-Up Work Club",
 			},
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-07.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utujxisy2l",
+		twitter: "https://x.com/Victim_Crasher/status/1843286464274239581",
 	},
 	{
 		date: "2024-10-08",
@@ -154,6 +176,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-08.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utvgkepf2e",
+		twitter: "https://x.com/Victim_Crasher/status/1843656155052351701",
 	},
 	{
 		date: "2024-10-09",
@@ -169,6 +194,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-09.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utwahwp52y",
+		twitter: "https://x.com/Victim_Crasher/status/1844028045688238564",
 	},
 	{
 		date: "2024-10-10",
@@ -191,6 +219,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-10.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utwzulif2e",
+		twitter: "https://x.com/Victim_Crasher/status/1844392333397328192",
 	},
 	{
 		date: "2024-10-11",
@@ -210,6 +241,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-11.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utym35qf2y",
+		twitter: "https://x.com/Victim_Crasher/status/1844752234858586439",
 	},
 	{
 		date: "2024-10-12",
@@ -232,6 +266,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-12.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6utzmho4l2j",
+		twitter: "https://x.com/Victim_Crasher/status/1845102186394689735",
 	},
 	{
 		date: "2024-10-13",
@@ -251,6 +288,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-13.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uu2h6b4q2q",
+		twitter: "https://x.com/Victim_Crasher/status/1845487687991705908",
 	},
 	{
 		date: "2024-10-14",
@@ -273,6 +313,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-14.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uu3gaknn2e",
+		twitter: "https://x.com/Victim_Crasher/status/1845837295431360699",
 	},
 	{
 		date: "2024-10-15",
@@ -294,6 +337,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-15.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uu4rhovi2l",
+		twitter: "https://x.com/Victim_Crasher/status/1846199133197291672",
 	},
 	{
 		date: "2024-10-16",
@@ -316,6 +362,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-16.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uu5rykb72v",
+		twitter: "https://x.com/Victim_Crasher/status/1846576618959192439",
 	},
 	{
 		date: "2024-10-17",
@@ -340,6 +389,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-17.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uu6rvjjb2l",
+		twitter: "https://x.com/Victim_Crasher/status/1846922013480571303",
 	},
 	{
 		date: "2024-10-18",
@@ -363,6 +415,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-18.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uu7edyca2q",
+		twitter: "https://x.com/Victim_Crasher/status/1847285554695852243",
 	},
 	{
 		date: "2024-10-19",
@@ -382,6 +437,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-19.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6uucasn4s2r",
+		twitter: "https://x.com/Victim_Crasher/status/1847653729383989502",
 	},
 	{
 		date: "2024-10-20",
@@ -404,6 +462,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-20.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6xagmt5zp2e",
+		twitter: "https://x.com/Victim_Crasher/status/1848011863470297391",
 	},
 	{
 		date: "2024-10-21",
@@ -429,6 +490,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-21.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l6zq2eq2mw2l",
+		twitter: "https://x.com/Victim_Crasher/status/1848371019221962955",
 	},
 	{
 		date: "2024-10-12",
@@ -439,8 +503,7 @@ export const entries = [
 		characters: [
 			{
 				name: "Asuma Toki",
-				club: ["Cleaning&Clearing", "Paranormal Affairs Department"],
-				clubLabel: "Cleaning&Clearing, Paranormal Affairs Department",
+				club: "Cleaning&Clearing, Paranormal Affairs Department",
 			},
 			{
 				name: "Tsukatsuki Rio",
@@ -449,6 +512,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-22.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l74dr75zng2y",
+		twitter: "https://x.com/Victim_Crasher/status/1848748066092073037",
 	},
 	{
 		date: "2024-10-23",
@@ -468,6 +534,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-23.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l76wrfwlhc2z",
+		twitter: "https://x.com/Victim_Crasher/status/1849121633472278580",
 	},
 	{
 		date: "2024-10-24",
@@ -483,6 +552,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-24.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7bavunzid2z",
+		twitter: "https://x.com/Victim_Crasher/status/1849455907593478395",
 	},
 	{
 		date: "2024-10-25",
@@ -497,12 +569,14 @@ export const entries = [
 			},
 			{
 				name: "Shimoe Koharu",
-				club: ["Make-Up Work Club", "Justice Task Force"],
-				clubLabel: "Make-Up Work Club, Justice Task Force",
+				club: "Make-Up Work Club, Justice Task Force",
 			},
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-25.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7dqljflky2y",
+		twitter: "https://x.com/Victim_Crasher/status/1849814394374586702",
 	},
 	{
 		date: "2024-10-26",
@@ -522,6 +596,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-26.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7gk7xiv2m2l",
+		twitter: "https://x.com/Victim_Crasher/status/1850218405816946996",
 	},
 	{
 		date: "2024-10-27",
@@ -540,6 +617,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-27.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7ix75sa4p2l",
+		twitter: "https://x.com/Victim_Crasher/status/1850564891528274359",
 	},
 	{
 		date: "2024-10-28",
@@ -559,6 +639,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-28.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7ldp6ojwc2u",
+		twitter: "https://x.com/Victim_Crasher/status/1850909422551499128",
 	},
 	{
 		date: "2024-10-29",
@@ -578,6 +661,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-29.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7nuh5gyc52v",
+		twitter: "https://x.com/Victim_Crasher/status/1851272735802212757",
 	},
 	{
 		date: "2024-10-30",
@@ -601,6 +687,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-30.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7qgnrcmek2l",
+		twitter: "https://x.com/Victim_Crasher/status/1851642970795397559",
 	},
 	{
 		date: "2024-10-31",
@@ -618,7 +707,7 @@ export const entries = [
 				club: "S.C.H.A.L.E",
 			},
 			{
-				name: "Arona Doodle Sensei",
+				name: "Doodle Sensei",
 				club: "S.C.H.A.L.E",
 			},
 			{
@@ -628,6 +717,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2024-10-31.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/128598570",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3l7swuyceq62g",
+		twitter: "https://x.com/Victim_Crasher/status/1852004595670876558",
 	},
 	{
 		date: "2025-10-01",
@@ -645,6 +737,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-01.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/135925950",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m25go67wxs2x",
+		twitter: "https://x.com/Victim_Crasher/status/1973420126201639237",
 	},
 	{
 		date: "2025-10-02",
@@ -664,6 +759,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-02.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/135925950",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m27xbip5fs2o",
+		twitter: "https://x.com/Victim_Crasher/status/1973783669165957526",
 	},
 	{
 		date: "2025-10-03",
@@ -673,7 +771,7 @@ export const entries = [
 			"Just like Sakurako, Mine is actually one of that students that grew on me over time.",
 			"Also I really like the dynamic between Sakurako and Mine in the Trinity Idol event.",
 		],
-		school: "General Student Council",
+		school: "Trinity",
 		characters: [
 			{
 				name: "Aomori Mine",
@@ -682,6 +780,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-03.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/135925950",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2cip52pnc2y",
+		twitter: "https://x.com/Victim_Crasher/status/1974150502595375140",
 	},
 	{
 		date: "2025-10-04",
@@ -700,6 +801,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-04.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/135925950",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2f2xdaugs2r",
+		twitter: "https://x.com/Victim_Crasher/status/1974520539927793819",
 	},
 	{
 		date: "2025-10-05",
@@ -718,6 +822,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-05.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/135925950",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2hd6wzbfk2m",
+		twitter: "https://x.com/Victim_Crasher/status/1974845545710801269",
 	},
 	{
 		date: "2025-10-06",
@@ -744,6 +851,9 @@ export const entries = [
 		],
 		isLandscape: true,
 		image: "/entries/2025-10-06.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136117275",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2jzl54zys2s",
+		twitter: "https://x.com/Victim_Crasher/status/1975234517171659239",
 	},
 	{
 		date: "2025-10-07",
@@ -762,6 +872,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-07.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136117275",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2mjvv2hvs2i",
+		twitter: "https://x.com/Victim_Crasher/status/1975596838528164259",
 	},
 	{
 		date: "2025-10-08",
@@ -781,6 +894,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-08.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136117275",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2p3juhvrs2d",
+		twitter: "https://x.com/Victim_Crasher/status/1975964785838846318",
 	},
 	{
 		date: "2025-10-09",
@@ -798,6 +914,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-09.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136117275",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2rl4rk2kk2q",
+		twitter: "https://x.com/Victim_Crasher/status/1976323276294193532",
 	},
 	{
 		date: "2025-10-10",
@@ -821,6 +940,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-10.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136117275",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2tqswgmx22o",
+		twitter: "https://x.com/Victim_Crasher/status/1976637244304933023",
 	},
 	{
 		date: "2025-10-11",
@@ -843,6 +965,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-11.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136321510",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2wmtp4hkc2o",
+		twitter: "https://x.com/Victim_Crasher/status/1977051418210271625",
 	},
 	{
 		date: "2025-10-12",
@@ -863,6 +988,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-12.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136321510",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m2z3mnsmmc2w",
+		twitter: "https://x.com/Victim_Crasher/status/1977405971178848481",
 	},
 	{
 		date: "2025-10-13",
@@ -880,6 +1008,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-13.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136321510",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m33f7pwl2s27",
+		twitter: "https://x.com/Victim_Crasher/status/1977737795956347061",
 	},
 	{
 		date: "2025-10-14",
@@ -899,6 +1030,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-14.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136321510",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m362sjxy6s2z",
+		twitter: "https://x.com/Victim_Crasher/status/1978123087682871593",
 	},
 	{
 		date: "2025-10-15",
@@ -917,6 +1051,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-15.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136321510",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3ajnhcros2q",
+		twitter: "https://x.com/Victim_Crasher/status/1978477799666315644",
 	},
 	{
 		date: "2025-10-16",
@@ -936,6 +1073,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-16.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136516446",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3cxudyuq22f",
+		twitter: "https://x.com/Victim_Crasher/status/1978830335031853454",
 	},
 	{
 		date: "2025-10-17",
@@ -951,6 +1091,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-17.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136516446",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3fl2jd6ws24",
+		twitter: "https://x.com/Victim_Crasher/status/1979204429535478245",
 	},
 	{
 		date: "2025-10-18",
@@ -969,6 +1112,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-18.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136516446",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3i26x7ey22r",
+		twitter: "https://x.com/Victim_Crasher/status/1979561517940179065",
 	},
 	{
 		date: "2025-10-19",
@@ -995,6 +1141,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-19.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136516446",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3kjvp7rb22y",
+		twitter: "https://x.com/Victim_Crasher/status/1979920499301081235",
 	},
 	{
 		date: "2025-10-20",
@@ -1021,6 +1170,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-20.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136516446",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3n37kqqzk2c",
+		twitter: "https://x.com/Victim_Crasher/status/1980286410155598306",
 	},
 	{
 		date: "2025-10-21",
@@ -1040,6 +1192,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-21.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136683811",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3pkfevfac2p",
+		twitter: "https://x.com/Victim_Crasher/status/1980643297224978671",
 	},
 	{
 		date: "2025-10-22",
@@ -1058,6 +1213,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-22.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136683811",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3s3bzo4pc2w",
+		twitter: "https://x.com/Victim_Crasher/status/1981007684838330637",
 	},
 	{
 		date: "2025-10-23",
@@ -1083,6 +1241,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-23.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136683811",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3unhy2wu22m",
+		twitter: "https://x.com/Victim_Crasher/status/1981377548413260002",
 	},
 	{
 		date: "2025-10-24",
@@ -1103,6 +1264,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-24.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136683811",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3x5oh6b5k2e",
+		twitter: "https://x.com/Victim_Crasher/status/1981738707179774342",
 	},
 	{
 		date: "2025-10-25",
@@ -1122,6 +1286,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-25.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136683811",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m3z454n6hk2c",
+		twitter: "https://x.com/Victim_Crasher/status/1982020114531971216",
 	},
 	{
 		date: "2025-10-26",
@@ -1141,6 +1308,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-26.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136936901",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m444zok4as2c",
+		twitter: "https://x.com/Victim_Crasher/status/1982456854484853006",
 	},
 	{
 		date: "2025-10-27",
@@ -1162,6 +1332,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-27.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136936901",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m46nry3jfs2d",
+		twitter: "https://x.com/Victim_Crasher/status/1982820386111729832",
 	},
 	{
 		date: "2025-10-28",
@@ -1184,6 +1357,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-28.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136936901",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m4ba4b3bjk2s",
+		twitter: "https://x.com/Victim_Crasher/status/1983191064950563030",
 	},
 	{
 		date: "2025-10-29",
@@ -1199,6 +1375,9 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-29.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136936901",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m4dmn3c4qs27",
+		twitter: "https://x.com/Victim_Crasher/status/1983535748285702289",
 	},
 	{
 		date: "2025-10-30",
@@ -1230,6 +1409,9 @@ export const entries = [
 		],
 		isLandscape: true,
 		image: "/entries/2025-10-30.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136936901",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m4g7jpcfec26",
+		twitter: "https://x.com/Victim_Crasher/status/1983909134182584641",
 	},
 	{
 		date: "2025-10-31",
@@ -1254,5 +1436,31 @@ export const entries = [
 		],
 		isLandscape: false,
 		image: "/entries/2025-10-31.webp",
+		pixiv: "https://www.pixiv.net/en/artworks/136936901",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3m4ippa74yk2c",
+		twitter: "https://x.com/Victim_Crasher/status/1984270288700547450",
 	},
 ];
+
+export const schools: string[] = [...new Set(entries.map((entry) => entry.school ?? "No Affiliation"))];
+export const clubsBySchool: Record<string, string[]> = Object.fromEntries(
+	Object.entries(
+		entries.reduce((acc, entry) => {
+			const school = entry.school ?? "No Affiliation";
+			if (!acc[school]) {
+				acc[school] = new Set<string>();
+			}
+			entry.characters.forEach((character) => {
+				if (character.club && character.club.includes(",")) {
+					character.club.split(",").forEach((club) => {
+						acc[school].add(club);
+					});
+				} else {
+					acc[school].add(character.club ?? "No Affiliation");
+				}
+			});
+			return acc;
+		}, {} as Record<string, Set<string>>)
+	).map(([school, clubs]) => [school, Array.from(clubs)])
+);
+export const years: string[] = [...new Set(entries.map((entry) => entry.date.split("-")[0]))];
