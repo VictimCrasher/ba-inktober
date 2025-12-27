@@ -50,7 +50,8 @@ export default function Entries() {
 				const matchesCharacters = entry.characters.some((char) =>
 					char.name.toLowerCase().includes(searchLower)
 				);
-				if (!matchesTitle && !matchesCharacters) return false;
+				const matchesSchool = entry.school?.toLowerCase().includes(searchLower);
+				if (!matchesTitle && !matchesCharacters && !matchesSchool) return false;
 			}
 
 			// Year filter

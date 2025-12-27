@@ -1,6 +1,6 @@
 import { entries } from "@/lib/entries";
 import { notFound } from "next/navigation";
-import { Box, Button, Container, Skeleton, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Skeleton, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { ArrowLeftIcon, ArrowRightIcon, CalendarBlankIcon } from "@phosphor-icons/react/dist/ssr";
 import moment from "moment";
@@ -52,7 +52,7 @@ export default async function EntryPage({ params }: EntryPageProps) {
 	const prevEntry = entries[entryIndex - 1];
 	const nextEntry = entries[entryIndex + 1];
 
-	const { isLandscape, image, title, description, note } = entry;
+	const { isLandscape, image, title, description, note, characters } = entry;
 
 	return (
 		<Box className="flex flex-col" sx={{ backgroundColor: "background.default", pt: 4 }}>
@@ -78,7 +78,7 @@ export default async function EntryPage({ params }: EntryPageProps) {
 											maxWidth: "100%",
 											width: { xs: "100%", md: "auto" },
 											minHeight: { xs: "0", md: "75dvh" },
-											maxHeight: "75dvh",
+											maxHeight: { md: "75dvh" },
 									  }),
 								position: "relative",
 								aspectRatio: isLandscape ? 1.414 : 0.707,
@@ -99,6 +99,7 @@ export default async function EntryPage({ params }: EntryPageProps) {
 									<Button
 										variant="text"
 										startIcon={<ArrowLeftIcon size={24} color="#666666" weight="bold" />}
+										sx={{ textAlign: "left" }}
 									>
 										<Stack direction="column" alignItems="flex-start">
 											<Typography
@@ -132,6 +133,7 @@ export default async function EntryPage({ params }: EntryPageProps) {
 									<Button
 										variant="text"
 										endIcon={<ArrowRightIcon size={24} color="#666666" weight="bold" />}
+										sx={{ textAlign: "right" }}
 									>
 										<Stack direction="column" alignItems="flex-end">
 											<Typography
@@ -208,6 +210,39 @@ export default async function EntryPage({ params }: EntryPageProps) {
 									{noteItem}
 								</Typography>
 							))}
+						</Stack>
+
+						<Stack direction="column" spacing={0.5}>
+							<Typography variant="body2" fontWeight="bold" color="text.secondary">
+								CHARACTERS
+							</Typography>
+							<Grid container spacing={2} alignItems="stretch">
+								{characters.map((character, index) => (
+									<Grid key={index} size={{ xs: 12, md: 6 }}>
+										<Stack
+											spacing={0.5}
+											alignItems="flex-start"
+											sx={{
+												textAlign: "left",
+												borderRadius: 2,
+                        backgroundColor: "white",
+                        border: "1px solid",
+                        borderColor: "text.primary",
+												px: 2,
+                        py: 1,
+                        height: "100%",
+											}}
+										>
+											<Typography variant="body2" fontWeight="bold" color="text.secondary">
+												{character.name}
+											</Typography>
+											<Typography variant="body2" color="text.secondary" sx={{ fontSize: "0.75rem" }}>
+												{character.club || ""}
+											</Typography>
+										</Stack>
+									</Grid>
+								))}
+							</Grid>
 						</Stack>
 
 						<Suspense fallback={<Skeleton variant="rectangular" height={40} width="100%" />}>

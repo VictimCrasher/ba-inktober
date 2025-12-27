@@ -8,9 +8,14 @@ import { useDebounce } from "@/src/hooks/useDebounce";
 interface SearchBarProps {
 	search: string;
 	setSearch: (search: string) => void;
+	placeholder?: string;
 }
 
-export default function SearchBar({ search, setSearch }: SearchBarProps) {
+export default function SearchBar({
+	search,
+	setSearch,
+	placeholder = "Search by title, character name, or school",
+}: SearchBarProps) {
 	const [searchText, setSearchText] = useState<string>(search);
 
 	// debounce search
@@ -21,14 +26,14 @@ export default function SearchBar({ search, setSearch }: SearchBarProps) {
 		setSearchText(search);
 	}, [search]);
 
-  useEffect(() => {
-    setSearch(debouncedSearchText);
-    // eslint-disable-next-line
-  }, [debouncedSearchText]);
+	useEffect(() => {
+		setSearch(debouncedSearchText);
+		// eslint-disable-next-line
+	}, [debouncedSearchText]);
 
 	return (
 		<TextField
-			placeholder="Search by title or character name"
+			placeholder={placeholder}
 			variant="outlined"
 			value={searchText}
 			onChange={(e) => setSearchText(e.target.value)}
