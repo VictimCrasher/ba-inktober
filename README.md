@@ -2,6 +2,8 @@
 
 ![banner](/public/bannerbig.webp)
 
+🔗 **Check it out!** [https://ba-ink.victim-crasher.com](https://ba-ink.victim-crasher.com)
+
 A modern, responsive personal portfolio website showcasing my Inktober artwork with a Blue Archive theme. Built with **Next.js**, **TypeScript**, and **Material UI**, featuring a dynamic, JSON-driven entry list and fully responsive layout optimized for all devices.
 
 ## 📖 About
