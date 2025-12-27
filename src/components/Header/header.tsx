@@ -53,9 +53,11 @@ export default function Header() {
 				</IconButton>
 				<Stack direction="column" spacing={2} sx={{ p: 3 }}>
 					{header.map((item) => (
-						<Typography key={item.href} variant="h6" fontWeight="bold" onClick={() => setIsOpen(false)}>
-							{item.label}
-						</Typography>
+						<Link href={item.href} key={item.href}>
+							<Typography variant="h6" fontWeight="bold" onClick={() => setIsOpen(false)}>
+								{item.label}
+							</Typography>
+						</Link>
 					))}
 				</Stack>
 			</Drawer>
