@@ -1521,7 +1521,7 @@ export const entries: Entry[] = [
       "We're back, let's do this again! A lot of thing has happened since the last year and I'm actually working in office now",
 			"But I'll do my best to do this year's Inktober!"
     ],
-    school: undefined,
+    school: "S.C.H.A.L.E",
     characters: [
       {
         name: "Arona",
@@ -1537,6 +1537,29 @@ export const entries: Entry[] = [
     pixiv: "",
     blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mwsxwdqnds2j",
     twitter: "https://x.com/Victim_Crasher/status/2105652347406049749",
+  },
+  {
+    date: "2026-10-02",
+    title: "Sleepy",
+    description: [
+      "*Yawn* What is this meeting even about? Can we have a rest instead?",
+    ],
+    note: [
+      "Sumomo is one of those characters that definitely needs more screentime, she's so cute and funny!",
+      "and she's also one of the black skinned characters in Blue Archive, so actually shading her skin is quite a challenge!"
+    ],
+    school: "General Student Council",
+    characters: [
+      {
+        name: "Sumomo",
+        club: "General Student Council",
+      },
+    ],
+    isLandscape: false,
+    image: "/entries/2026-10-02.webp",
+    pixiv: "",
+    blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mwvqodyejs2i",
+    twitter: "https://x.com/Victim_Crasher/status/2106052368815227012",
   },
 ];
 
