@@ -1561,6 +1561,29 @@ export const entries: Entry[] = [
     blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mwvqodyejs2i",
     twitter: "https://x.com/Victim_Crasher/status/2106052368815227012",
   },
+  {
+    date: "2026-10-03",
+    title: "Mine?",
+    description: [
+      "Wait… has anyone got my onigiri?? I haven't got mine…",
+    ],
+    note: [
+      "Once again, another black skinned character in Blue Archive and actually also one of my favorite characters!",
+      "The onigiri skit was based on Blue Archive Vol 4 story, definitely give it a read!"
+    ],
+    school: "General Student Council",
+    characters: [
+      {
+        name: "Haine",
+        club: "General Student Council",
+      },
+    ],
+    isLandscape: false,
+    image: "/entries/2026-10-03.webp",
+    pixiv: "",
+    blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mwxz7rf6js2a",
+    twitter: "https://x.com/Victim_Crasher/status/2106379000528748973",
+  },
 ];
 
 export const schools: string[] = [
