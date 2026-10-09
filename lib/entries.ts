@@ -1582,6 +1582,68 @@ export const entries: Entry[] = [
 		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mx7lslfqwk2e",
 		twitter: "https://x.com/Victim_Crasher/status/2107471447300165966",
 	},
+	{
+		date: "2026-10-07",
+		title: "Time?",
+		description: [
+			"Prisoner 1192, I'm glad you're being enthusiastic, but I'd like to remind you that the quiet time started hours ago.",
+			"Would you like me to bring the clock closer so you can confirm?",
+		],
+		note: ["Misuzu is such a gentle giant and such a sweetheart. Also very very overdressed lmao."],
+		school: "Valkyrie",
+		characters: [
+			{
+				name: "Kanbara Misuzu",
+				club: "Correction Bureau",
+			},
+		],
+		isLandscape: false,
+		image: "/entries/2026-10-07.webp",
+		pixiv: "",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mxcepoavv225",
+		twitter: "https://x.com/Victim_Crasher/status/2107871899200164127",
+	},
+	{
+		date: "2026-10-08",
+		title: "Why?",
+		description: ["W... why does the correction bureau need so many clocks???"],
+		note: [
+			"I initially searched for a clock-related myth or ritual since it fits Konoka personality, but I couldn't find any.",
+			"Also, I really like her expression in this one",
+		],
+		school: "Valkyrie",
+		characters: [
+			{
+				name: "Shima Konoka",
+				club: "Public Peace Bureau",
+			},
+		],
+		isLandscape: false,
+		image: "/entries/2026-10-08.webp",
+		pixiv: "",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mxepua5brk26",
+		twitter: "https://x.com/Victim_Crasher/status/2108210294044696866",
+	},
+	{
+		date: "2026-10-09",
+		title: "Collections",
+		description: ["Actually, today is also Kaho's Birthday. ", "Happy Birthday, Kaho!"],
+		note: [
+			"Unfortunately I'm unable to continue the 'story' streak we've been doing since the beginning of Inktober. But, the inktober is still going strong and I'm still enjoying it!",
+		],
+		school: "Hyakkiyako",
+		characters: [
+			{
+				name: "Kuwakami Kaho",
+				club: "Yin-Yang Club",
+			},
+		],
+		isLandscape: false,
+		image: "/entries/2026-10-09.webp",
+		pixiv: "",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mxhdq2mc7k2i",
+		twitter: "https://x.com/Victim_Crasher/status/2108587988322341312",
+	},
 ];
 
 export const schools: string[] = [...new Set(entries.map((entry) => entry.school ?? "No Affiliation"))];
