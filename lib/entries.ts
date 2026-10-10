@@ -1,6 +1,6 @@
 import { Entry } from "./types";
 
-export const entries: Entry[] = [
+const entrySources: Omit<Entry, "thumbnail">[] = [
 	{
 		date: "2024-10-01",
 		title: "Arona",
@@ -1644,7 +1644,32 @@ export const entries: Entry[] = [
 		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mxhdq2mc7k2i",
 		twitter: "https://x.com/Victim_Crasher/status/2108587988322341312",
 	},
+	{
+		date: "2026-10-10",
+		title: "Karuta",
+		description: ["Undisputed Karuta Champion, as well as Yin-Yang Club's favorite Idol, Chise"],
+		note: [
+			"Along the storyline, I observed that even though Chise is very calm and seemingly very airheaded, she actually excels in most competitive activities, like Karuta, singing, even high physical activities competitions.",
+		],
+		school: "Hyakkiyako",
+		characters: [
+			{
+				name: "Waraku Chise",
+				club: "Yin-Yang Club",
+			},
+		],
+		isLandscape: false,
+		image: "/entries/2026-10-10.webp",
+		pixiv: "",
+		blueSky: "https://bsky.app/profile/victim-crasher.com/post/3mxjs6ym5ps2t",
+		twitter: "https://x.com/Victim_Crasher/status/2108941409072062871",
+	},
 ];
+
+export const entries: Entry[] = entrySources.map((entry) => ({
+	...entry,
+	thumbnail: entry.image.replace("/entries/", "/entries/thumbnail/"),
+}));
 
 export const schools: string[] = [...new Set(entries.map((entry) => entry.school ?? "No Affiliation"))];
 export const clubsBySchool: Record<string, string[]> = Object.fromEntries(

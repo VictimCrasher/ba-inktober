@@ -10,6 +10,7 @@ export type Entry = {
 	}[];
 	isLandscape: boolean;
 	image: string;
+	thumbnail: string;
 	pixiv?: string;
 	twitter?: string;
 	blueSky?: string;

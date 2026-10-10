@@ -32,12 +32,12 @@ export const generateMetadata = async ({ params }: EntryPageProps) => {
 		openGraph: {
 			title: `${entry.title} - Inktober Archive Day ${day} (${year})`,
 			description: entry.description.join(" "),
-			images: [`https://ba-ink.victim-crasher.com${entry.image}`],
+			images: [`https://ba-ink.victim-crasher.com${entry.thumbnail}`],
 		},
 		twitter: {
 			title: `${entry.title} - Inktober Archive Day ${day} (${year})`,
 			description: entry.description.join(" "),
-			images: [`https://ba-ink.victim-crasher.com${entry.image}`],
+			images: [`https://ba-ink.victim-crasher.com${entry.thumbnail}`],
 		},
 	};
 };

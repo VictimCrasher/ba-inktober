@@ -45,7 +45,7 @@ export default function EntryCard({ entry }: EntryCardProps) {
 				}}
 			/>
 			{/* Image */}
-			<Image src={entry.image} alt={entry.title} fill style={{ borderRadius: "1rem", objectFit: "cover" }} />
+			<Image src={entry.thumbnail} alt={entry.title} fill style={{ borderRadius: "1rem", objectFit: "cover" }} />
 			{/* Title */}
 			<Stack
 				spacing={0.5}

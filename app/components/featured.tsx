@@ -17,7 +17,7 @@ export default function Featured() {
 	if (!featuredEntry) return null;
 
 	const [year, , day] = featuredEntry.date.split("-");
-	const { isLandscape, image, title } = featuredEntry;
+	const { isLandscape, thumbnail, title } = featuredEntry;
 
 	return (
 		<Stack
@@ -64,7 +64,7 @@ export default function Featured() {
 					}}
 				/>
 				<Image
-					src={image}
+					src={thumbnail}
 					alt={title}
 					fill
 					style={{
