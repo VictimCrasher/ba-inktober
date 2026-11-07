@@ -1,6 +1,4 @@
 // Create a function that returns a random entry from the entries array that's consistent every day
-import { entries } from "@/lib/entries";
-import { Entry } from "@/lib/types";
 import moment from "moment";
 
 /**
@@ -19,10 +17,11 @@ function mulberry32(seed: number): () => number {
 
 // Get a featured entry that's consistent every day
 // How it works: Create a random seed based on the current date and use it to get a consistent entry
-export const getFeaturedEntry = (currentDate: Date = new Date()): Entry | undefined => {
+export const getFeaturedEntry = <T>(items: readonly T[], currentDate: Date = new Date()): T | undefined => {
+	if (items.length === 0) return undefined;
 	// Create a seed based on the date (year, month, day) only, ignoring time
 	const randomSeed = moment(currentDate).format("YYYYMMDD");
 	const randomGenerator = mulberry32(Number(randomSeed));
-	const randomIndex = Math.floor(randomGenerator() * entries.length);
-	return entries[randomIndex] as Entry | undefined;
+	const randomIndex = Math.floor(randomGenerator() * items.length);
+	return items[randomIndex];
 };

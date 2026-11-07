@@ -1,10 +1,10 @@
-import { Entry } from "@/lib/types";
+import { EntryListItem } from "@/lib/types";
 import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
 interface EntryCardProps {
-	entry: Entry;
+	entry: EntryListItem;
 }
 
 export default function EntryCard({ entry }: EntryCardProps) {

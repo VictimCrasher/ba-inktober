@@ -4,7 +4,7 @@ import { AppBar, Drawer, IconButton, Button, Toolbar, Typography, Fade, Stack, C
 import { ListIcon, XCircleIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useState } from "react";
-import { header } from "@/lib/header";
+import { header } from "@/lib/nav";
 import { useMediaQuery } from "@mui/material";
 import theme from "@/src/theme";
 

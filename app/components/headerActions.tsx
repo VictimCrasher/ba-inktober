@@ -1,11 +1,10 @@
 "use client";
 
-import { entries } from "@/lib/entries";
 import { Stack, Button, Link as MuiLink } from "@mui/material";
 import Link from "next/link";
 import { useMemo } from "react";
 
-export default function HeaderActions() {
+export default function HeaderActions({ dates }: { dates: string[] }) {
 	const onClickViewAllEntries = () => {
 		// auto scroll to the entries section
 		const entriesSection = document.getElementById("entries");
@@ -16,10 +15,10 @@ export default function HeaderActions() {
 
 	const randomEntry = useMemo(() => {
 		// eslint-disable-next-line react-hooks/purity
-		const randomEntry = entries[Math.floor(Math.random() * entries.length)];
-		const [year, , day] = randomEntry.date.split("-");
+		const date = dates[Math.floor(Math.random() * dates.length)];
+		const [year, , day] = date.split("-");
 		return `/${year}/${day}`;
-	}, []);
+	}, [dates]);
 
 	return (
 		<Stack direction="row" spacing={2} sx={{ justifyContent: { xs: "center", md: "flex-start" } }}>

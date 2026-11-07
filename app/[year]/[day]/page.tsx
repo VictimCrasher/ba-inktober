@@ -205,11 +205,17 @@ export default async function EntryPage({ params }: EntryPageProps) {
 							<Typography variant="body2" fontWeight="bold" color="text.secondary">
 								ARTIST COMMENTARY
 							</Typography>
-							{note.map((noteItem, index) => (
-								<Typography key={index} variant="body2" color="text.secondary">
-									{noteItem}
+							{note.filter((noteItem) => noteItem.trim()).length === 0 ? (
+								<Typography variant="body2" color="text.secondary">
+									-
 								</Typography>
-							))}
+							) : (
+								note.map((noteItem, index) => (
+									<Typography key={index} variant="body2" color="text.secondary">
+										{noteItem}
+									</Typography>
+								))
+							)}
 						</Stack>
 
 						<Stack direction="column" spacing={0.5}>

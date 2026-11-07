@@ -1,9 +1,28 @@
 import { Box, Container, Skeleton, Stack, Typography } from "@mui/material";
 import { headerLabels, headerDescription } from "@/lib/header";
+import { entries } from "@/lib/entries";
+import { EntryListItem, FeaturedEntry } from "@/lib/types";
 import HeaderActions from "./components/headerActions";
 import Featured from "./components/featured";
 import Entries from "./components/entries";
 import { Suspense } from "react";
+
+const entryList: EntryListItem[] = entries.map((entry) => ({
+	date: entry.date,
+	title: entry.title,
+	school: entry.school,
+	characters: entry.characters.map((character) => ({ name: character.name })),
+	thumbnail: entry.image.replace("/entries/", "/entries/list/"),
+}));
+
+const featuredEntries: FeaturedEntry[] = entries.map((entry) => ({
+	date: entry.date,
+	title: entry.title,
+	thumbnail: entry.thumbnail,
+	isLandscape: entry.isLandscape,
+}));
+
+const entryDates = entries.map((entry) => entry.date);
 
 export default function Home() {
 	return (
@@ -17,7 +36,7 @@ export default function Home() {
 					display: "flex",
 					alignItems: "center",
 					flexDirection: { xs: "column", md: "row" },
-					"& > *": { width: { xs: "100%", md: "50%" } },
+					"& > *": { width: { xs: "100%", md: "50%" }, minWidth: 0 },
 					gap: { xs: 4, md: 2 },
 				}}
 			>
@@ -46,15 +65,15 @@ export default function Home() {
 					>
 						{headerDescription}
 					</Typography>
-					<HeaderActions />
+					<HeaderActions dates={entryDates} />
 				</Stack>
 				<Box>
-					<Featured />
+					<Featured entries={featuredEntries} />
 				</Box>
 			</Container>
 			<section id="entries" style={{ scrollMarginTop: "64px" }}>
 				<Suspense fallback={<Skeleton variant="rectangular" height={300} width="100%" />}>
-					<Entries />
+					<Entries entries={entryList} />
 				</Suspense>
 			</section>
 		</Box>

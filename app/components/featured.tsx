@@ -2,7 +2,7 @@
 
 import { Box, Stack, Typography } from "@mui/material";
 import { getFeaturedEntry } from "@/src/utils";
-import { Entry } from "@/lib/types";
+import { FeaturedEntry } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,8 +11,8 @@ const border = {
 	borderColor: "text.primary",
 };
 
-export default function Featured() {
-	const featuredEntry: Entry | undefined = getFeaturedEntry();
+export default function Featured({ entries }: { entries: FeaturedEntry[] }) {
+	const featuredEntry = getFeaturedEntry(entries);
 
 	if (!featuredEntry) return null;
 
@@ -23,18 +23,29 @@ export default function Featured() {
 		<Stack
 			justifyContent="center"
 			alignItems="center"
-			sx={{ position: "relative", height: { xs: "50vh", md: "75vh" }, width: "100%" }}
+			sx={{
+				position: "relative",
+				height: { xs: "50vh", md: "75vh" },
+				width: "100%",
+				minWidth: 0,
+				overflow: "clip",
+				containerType: "size",
+			}}
 		>
 			<Box
 				component={Link}
 				href={`/${year}/${day}`}
 				sx={{
 					position: "relative",
-					// A4 aspect ratio: 210mm × 297mm = 1:1.414 (or 0.707:1)
-					...(isLandscape ? { width: "90%" } : { height: "90%" }),
+					// A4 aspect ratio: 210mm × 297mm = 1:1.414 (or 0.707:1).
+					// Cap the layout size so the 5° tilt and offset sheet stay inside the column.
+					aspectRatio: isLandscape ? "1.414 / 1" : "1 / 1.414",
+					width: isLandscape
+						? "min(88cqw, calc(85cqh * 1.414))"
+						: "min(82cqw, calc(90cqh * 0.707))",
+					maxWidth: "100%",
 					transform: "rotate(5deg)",
 					transition: "transform 0.3s ease-in-out",
-					aspectRatio: isLandscape ? 1.414 : 0.707,
 					borderRadius: 4,
 					"&:hover": {
 						transform: "rotate(0deg)",
